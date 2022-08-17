@@ -1,6 +1,7 @@
 package com.example.appbook.response
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class Results(
     @SerializedName("id") val id: Int?,
@@ -14,4 +15,4 @@ data class Results(
     @SerializedName("media_type") val media_type: String?,
     @SerializedName("formats") val formats: Formats?,
     @SerializedName("download_count") val download_count: Int?
-    )
+    ):Serializable

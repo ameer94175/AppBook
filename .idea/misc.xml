@@ -3,11 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AppBook/app/src/main/res/drawable/circle.xml" value="0.1" />
+        <entry key="..\:/AppBook/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.1" />
         <entry key="..\:/AppBook/app/src/main/res/drawable/shipbook.xml" value="0.2105" />
-        <entry key="..\:/AppBook/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/AppBook/app/src/main/res/layout/book_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/AppBook/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/AppBook/app/src/main/res/layout/book_fragment.xml" value="0.22" />
         <entry key="..\:/AppBook/app/src/main/res/layout/fragment_list_book.xml" value="0.19010416666666666" />
-        <entry key="..\:/AppBook/app/src/main/res/layout/list_book_fragment.xml" value="0.20416666666666666" />
+        <entry key="..\:/AppBook/app/src/main/res/layout/item_book.xml" value="0.20416666666666666" />
+        <entry key="..\:/AppBook/app/src/main/res/layout/item_book_information.xml" value="0.1" />
+        <entry key="..\:/AppBook/app/src/main/res/layout/list_book_fragment.xml" value="0.25" />
       </map>
     </option>
   </component>
