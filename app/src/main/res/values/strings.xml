@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">App Book</string>
+    <string name="oops">Oops!</string>
+    <string name="no_connection_message">There is no internet connection\nPlease check out your connection</string>
+    <string name="try_again">try again</string>
+    <string name="app_book">App Book</string>
+    <string name="favorite_books">Favorite Books</string>
+    <string name="title">title</string>
+    <string name="authors">authors</string>
+    <string name="subjects">subjects</string>
+
 </resources>

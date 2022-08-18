@@ -8,5 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="popular_color">#000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="rectangle_1_color">#CEF3FC</color>
+    <color name="on_purple_background">#DACAEB</color>
+    <color name="yellow">#DEE3D37F</color>
+    <color name="yellow_dark">#DEA39755</color>
+    <color name="background_color">#F1F1F6</color>
+
 </resources>

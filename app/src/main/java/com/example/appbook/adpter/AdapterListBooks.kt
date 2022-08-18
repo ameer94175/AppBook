@@ -22,14 +22,15 @@ class AdapterListBooks(val list:List<Results>, val listener:BookInteractionListe
         holder.binding.apply {
             Glide.with(this.root).load(list.formats?.imagejpeg).into(idIVBook)
          idIVBook.setOnClickListener {
-             listener.onClickItem(list.formats?.imagejpeg)
+             listener.onClickItem(list)
          }
         }
     }
 
     override fun getItemCount():Int=list.size
 
-    class HolderListBooks(itemView: View):RecyclerView.ViewHolder(itemView){
+     class HolderListBooks(itemView: View):RecyclerView.ViewHolder(itemView){
         val binding= ItemBookBinding.bind(itemView)
     }
+
 }

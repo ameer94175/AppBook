@@ -1,4 +1,4 @@
-package com.example.appbook.network
+package com.example.appbook.model.network
 
 import android.util.Log
 import com.example.appbook.response.Data
@@ -30,6 +30,8 @@ class Client {
         Log.i("HGHFD","$book")
         State.Success(book)
     } else {
+        Log.i("HGHFD", response.message)
+
         State.Fail(response.message)
     }
 }

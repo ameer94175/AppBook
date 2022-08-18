@@ -1,4 +1,4 @@
-package com.example.appbook.network
+package com.example.appbook.model.network
 
 sealed class State<out T> {
     object Loading : State<Nothing>()

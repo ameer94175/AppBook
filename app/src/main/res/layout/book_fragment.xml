@@ -8,11 +8,11 @@
     tools:context=".ui.MainActivity">
     <ImageView
         android:id="@+id/image_user"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="24dp"
+        android:layout_margin="@dimen/spacing_extra_large"
         android:src="@drawable/ellipse_1"
         />
 
@@ -20,10 +20,10 @@
         android:id="@+id/text_app"
         android:layout_width="115dp"
         android:layout_height="41dp"
-        android:layout_margin="24dp"
-        android:text="App Book"
+        android:layout_margin="@dimen/spacing_medium"
+        android:text="@string/app_book"
         android:textColor="@color/white"
-        android:textSize="24dp"
+        android:textSize="@dimen/text_large"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/image_user"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,12 +37,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:background="@drawable/shipbook"
-        >
+        android:orientation="vertical">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/ConstraintLayout_book"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="304dp"
+            android:layout_margin="@dimen/spacing_medium"
+           >
 
 
        <ImageView
@@ -52,7 +54,82 @@
            app:layout_constraintStart_toStartOf="parent"
            app:layout_constraintEnd_toEndOf="parent"
            app:layout_constraintTop_toTopOf="parent"
-           android:layout_marginTop="16dp"/>
+           android:layout_marginTop="@dimen/spacing_medium"/>
+
+            <ImageView
+                android:id="@+id/bake"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="@dimen/spacing_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                />
+
+            <ImageView
+                android:id="@+id/vectorek100"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="@dimen/spacing_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/vectorek100"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="280dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/spacing_medium"
+            >
+<TextView
+    android:id="@+id/title"
+    android:layout_width="194dp"
+    android:layout_height="30dp"
+    android:singleLine="true"
+    android:ellipsize="end"
+    android:textStyle="bold"
+    android:textSize="@dimen/text_large"
+    android:textColor="@color/black"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:text="@string/title"
+    />
+
+    <TextView
+        android:id="@+id/authors"
+        android:layout_width="194dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:text="@string/authors"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_large"
+        android:singleLine="true"
+        android:ellipsize="end"
+                />
+
+            <TextView
+                android:id="@+id/subjects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="@id/authors"
+                app:layout_constraintEnd_toEndOf="@id/authors"
+                app:layout_constraintTop_toBottomOf="@id/authors"
+                android:text="@string/subjects"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_medium"
+                android:ellipsize="end"
+                />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
